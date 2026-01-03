@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandeep Babu Shrestha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/d9ddf8a7c6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container nav-container">
+          <h1 class="logo">Sandeep Babu Shrestha</h1>
+
+          <div class="hamburger-menu" id="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+  
+
+    <!-- Landing page / Hero Section -->
+
+    <section id="home" class="section full-section hero-section">
+      <div class="hero-content fade-in">
+        <h2>Hi, I’m <span>Sandeep Babu Shrestha</span></h2>
+        <p>CS student passionate about security, design, and building digital experiences.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="Media/CV_Shrestha.pdf" class="btn btn-secondary" download>Download CV</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section : Left and Right -->
+
+    <section id="about" class="section full-section about-section">
+      <div class="about-left fade-down">
+        <div class="about-image-box">
+          <img src="Media/About_photo.jpg" alt="Sandeep Babu Shrestha" class="about-img">
+        </div>
+      </div>
+      <div class="about-right fade-up">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! My name is Sandeep Babu Shrestha and I'm a Computer Science student with a deep 
+            interest in cybersecurity, user-centric design, and building meaningful digital solutions. 
+            I enjoy exploring how technology can be used to solve real-world problems — whether it's 
+            securing systems, designing intuitive interfaces, or developing scalable applications.
+          </p>
+          
+          <p>
+            Through academic projects and personal work, I've gained experience in programming, 
+            media tools, and collaborative development. I'm currently pursuing my B.Sc. in Computer 
+            Science in Brandenburg, Germany, and constantly looking for opportunities to learn, grow, 
+            and contribute to impactful tech projects.
+          </p>
+          
+          <div class="about-tabs">
+            <div class="tab-buttons">
+              <div class="tab-btn active" onclick="showTab('location', this)">Location</div>
+              <div class="tab-btn" onclick="showTab('degree', this)">Degree</div>
+              <div class="tab-btn" onclick="showTab('languages', this)">Languages</div>
+              <div class="tab-btn" onclick="showTab('experience', this)">Experience</div>
+            </div>
+            
+            <div class="tab-content active" id="location">
+              <p><i class="fa-solid fa-location-dot"></i> Brandenburg, Germany</p>
+            </div>
+          
+            <div class="tab-content" id="degree">
+              <p><i class="fa-solid fa-graduation-cap"></i> B.Sc. in Computer Science</p>
+            </div>
+            
+            <div class="tab-content" id="languages">
+              <p><i class="fa-regular fa-language"></i> English | Deutsch | Nepali | Hindi</p>
+            </div>
+          
+            <div class="tab-content" id="experience">
+              <p><i class="fa-solid fa-trophy"></i> SI3 (Security) | Sungava Press | Touch Media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skill Section : Left and Right -->
+
+    <section id="skills" class="skills-section">
+    
+      <div class="skills-left">
+        <div class="animation-box">
+          <lottie-player
+            id="skillsLottie"
+            src="Media/Programming.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay>
+          </lottie-player>
+        </div>
+      </div>
+
+      <div class="skills-right">
+        <h2 class="skill">Skills</h2>
+        
+        <div class="skills-slider-vertical">
+          <div class="skill-slide">
+            <p>Programming Languages<br>
+              <span>I enjoy building efficient and scalable solutions using Java, 
+                JavaScript, C, and HTML/CSS. My focus is on clean code, logic, and learning 
+                how different technologies connect to bring ideas to life.
+              </span>
+            </p>
+          </div>
+        
+          <div class="skill-slide">
+            <p>Design Tools<br>
+              <span>I use Figma, Affinity Designer, Adobe Illustrator, InDesign and Photoshop to craft clean and user-centered interfaces 
+                that balance aesthetics and usability.
+              </span>
+            </p>
+          </div>
+
+          <div class="skill-slide">
+            <p>Photo & Videography<br>
+              <span>I have hands-on experience in both photography and videography, having worked with a variety of cameras and shooting styles. I'm also skilled in post-production, with proficiency in industry-standard editing tools like Adobe After Effects, DaVinci Resolve, Adobe Lightroom, and Affinity Photo.
+              </span>
+            </p>
+          </div>
+      
+          <div class="skill-slide">
+            <p>Soft Skills<br>
+              <span>I believe strong communication and collaboration are as essential 
+                as technical expertise. I value adaptability and teamwork in fast-moving environments.
+              </span>
+            </p>
+          </div>
+        </div>
+
+        <div class="slider-dots">
+          <span class="dot active" onclick="setSlide(0)"></span>
+          <span class="dot" onclick="setSlide(1)"></span>
+          <span class="dot" onclick="setSlide(2)"></span>
+          <span class="dot" onclick="setSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+
+    <section id="projects" class="project-section">
+      <h2 class="subtitle">Projects</h2>
+
+      <div class="scroll-controls">
+        <button id="scrollLeft" class="scroll-btn left">&#10094;</button>
+        <div class="project-scroll-wrapper">
+        
+          <div class="work-list horizontal-scroll">
+            <div class="work">
+              <img src="Media/Reg_Page.jpg" alt="Sample Login">
+                <div class="layer">
+                  <h3>Registration Page</h3>
+                  <p>A modern, responsive user registration page for a social platform. This form includes real-time validation, password visibility toggling, and stylish UI elements built with HTML, CSS, and JavaScript. Designed for a smooth and user-friendly signup experience.</p>
+                  <a href="https://github.com/sunstha014/Sample_Reg_CinnaMoon" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        
+            <div class="work">
+              <img src="Media/project2.jpg" alt="Pizzeria App">
+              <div class="layer">
+                <h3>Weather Chatbot</h3>
+                <p>A Telegram chatbot that provides real-time weather updates and 3-day forecasts. Users can get weather details by entering city names or simply sharing their location. Built with Python, AWS Lambda, and the WeatherAPI.</p>
+                <a href="https://t.me/SinaaMoon_bot" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+        
+            <div class="work">
+              <img src="Media/project3.jpg" alt="Short Film">
+              <div class="layer">
+                <h3>The Unspoken</h3>
+                <p>A creative short film produced as a semester project, exploring human emotions.</p>
+                <a href="https://youtu.be/no8-eiZrBNc" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+        
+            <div class="work">
+              <img src="Media/project4.jpg" alt="Animation Project">
+              <div class="layer">
+                <h3>Magic Mushroom</h3>
+                <p>Magic Mushroom is an opening animation that takes you on a journey through mysterious time dimensions, blending magic and surreal visuals that defy scientific understanding.</p>
+                <a href="https://youtu.be/4WCp-wRjGow" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-up-right-from-square"></i></a>
+              </div>
+            </div>
+        
+            <div class="work">
+              <img src="Media/project5.jpg" alt="Animation Project">
+              <div class="layer">
+                <h3>Other Projects</h3>
+                <p>Several small-scale projects exploring different concepts and technologies. Perfect for quick demos and experiments.</p>
+                <a href="#"><i class="fa-solid fa-up-right-from-square" target="_blank" rel="noopener noreferrer"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="scrollRight" class="scroll-btn right">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Contact Section : Left and Right -->
+
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <div class="contact-wrapper" style="display: flex; gap: 40px; flex-wrap: wrap; margin-top: 30px;">
+        <!-- Left info -->
+        <div class="contact-left" style="flex: 1 1 300px; min-width: 280px;">
+          <p><i class="fa-solid fa-paper-plane"></i>sunstha014@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +49-1573-3204507</p>
+            <div class="social-icons" style="margin-top: 20px;">
+            <a href="https://www.facebook.com/Assassin.Revived"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://np.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://instagram.com/meepuzu?igshid=NzZhOTFlYzFmZQ=="><i class="fa-brands fa-square-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+          </div>
+          <a href="Media/CV_Shrestha.pdf" download class="btn btn2" style="margin-top: 30px; display: inline-block;">Download CV</a>
+        </div>
+
+        <!-- Right form -->
+        <div class="contact-right" style="flex: 1 1 300px; min-width: 280px;">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <input type="text" name="Subject" placeholder="Subject" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Sandeep Babu Shrestha | sunstha014@gmail.com</p>
+    </footer>
+
+  </body>
+</html>
